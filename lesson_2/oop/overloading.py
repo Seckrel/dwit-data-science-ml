@@ -4,6 +4,7 @@ class Coordinate:
         self.long = long
 
     def __add__(self, coord):
+        print(self.lat, coord, type(coord))
         if isinstance(coord, Coordinate):
             return Coordinate(self.lat + coord.lat, self.long + coord.long)
         
@@ -14,6 +15,6 @@ class Coordinate:
 coord1 = Coordinate(12.34, 56.78)
 coord2 = Coordinate(34.56, 78.90)
 
-coord_sum = coord1 + coord2
+coord_sum = coord1 + 12
 
 print(coord_sum)

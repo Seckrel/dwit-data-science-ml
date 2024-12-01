@@ -22,3 +22,14 @@
 
 # finally:
 #     print("I am finally")
+
+
+
+
+
+from math import sqrt, pi
+
+r = int(input("Enter a raidus:"))
+area = pi * r**2
+
+print(area)
